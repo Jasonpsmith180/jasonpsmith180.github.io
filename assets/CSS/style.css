@@ -15,6 +15,7 @@
 /* General Body and Text Styles */
 body {
     font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--quinary-color);
 }
 
 /* Header Styles */
@@ -26,8 +27,6 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    position: sticky;
-    position: -webkit-sticky;
     top: 0;
 }
 
@@ -35,7 +34,7 @@ header h1 {
     font-weight: bold;
     padding: 10px 1% 10px 6%;
     margin: 0;
-    font-size: 4vw;
+    font-size: 3.75rem;
     color: var(--quinary-color);
     background-color: var(--secondary-color);
     line-height: 1;
@@ -58,8 +57,9 @@ header nav ul{
 header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
-    font-size: 1.55vw;
+    font-size: 1.75rem;
     color: var(--quinary-color);
+    text-decoration: none;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -88,7 +88,82 @@ header nav ul li a:hover {
     background-color: var(--secondary-color);
     margin: 10px 0px;
     padding: 8px 10px;
-    font-size: 3.25vw;
+    font-size: 3vw;
     line-height: 1;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Hero Styles End */
+
+/* Main Styles */
+.page-wrapper {
+    max-width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+    background-color: var(--quaternary-color);
+}
+
+.page-section {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.page-section h2 {
+    flex: 0 0 15%;
+    font-size: 3.5rem;
+    text-align: right;
+    padding-right: 15px;
+    color: var(--primary-color);
+    border-right: 4px solid var(--primary-color);
+}
+
+.page-section div {
+    flex: 0 0 80%
+}
+
+.page-section p {
+    flex: 0 0 85%;
+    margin: 10px;
+    color: var(--primary-color);
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.flex-item {
+    display: flex;
+    flex: 1;
+    align-items: flex-end;
+    margin: 5px;
+    padding: 5px;
+    border: 4px solid var(--secondary-color);
+    background-color: var(--quaternary-color);
+    min-height: 150px;
+    max-height: 150px;
+}
+
+.flex-item:first-child {
+    min-height: 400px;
+    flex-basis: 100%;
+}
+
+.flex-item div {
+    background-color: var(--secondary-color);
+    padding: 10px;
+}
+
+.flex-item h3 {
+    font-size: 1.2rem;
+}
+
+.flex-item span {
+    font-size: 1rem;
 }
