@@ -59,7 +59,8 @@ header nav ul{
 }
 
 header nav ul li a {
-    padding: 10px 15px;
+    padding: 5px;
+    margin: 10px 5px 10px 5px;
     font-weight: lighter;
     font-size: 1.75rem;
     color: var(--quinary-color);
@@ -101,7 +102,7 @@ header nav ul li a:hover {
 
 /* Main Styles */
 .page-wrapper {
-    max-width: 90%;
+    max-width: 85%;
     margin-left: auto;
     margin-right: auto;;
     background-color: var(--quaternary-color);
@@ -120,7 +121,7 @@ header nav ul li a:hover {
     flex: 0 0 20%;
     font-size: 3.5vw;
     text-align: right;
-    padding-right: 15px;
+    padding-right: 10px;
     color: var(--primary-color);
     border-right: 4px solid var(--primary-color);
     line-height: 1;
@@ -133,13 +134,12 @@ header nav ul li a:hover {
 .page-section img {
     height: 200px;
     width: 200px;
-    float: left;
     margin: 0px 10px 10px 5px;
     border: 2px solid var(--primary-color);
 }
 
 .page-section p {
-    margin: 10px 10px 10px 5px;
+    margin: 10px;
     color: var(--primary-color);
     float: left;
 }
@@ -158,13 +158,13 @@ header nav ul li a:hover {
     display: flex;
     flex: 1;
     align-items: flex-end;
-    margin: 5px;
+    margin: 10px;
     padding: 5px;
     border: 4px solid var(--secondary-color);
     background-color: var(--quaternary-color);
     min-height: 150px;
     max-height: 150px;
-    background-size: 150%;
+    background-size: 200%;
 }
 
 .flex-item:hover {
@@ -182,7 +182,7 @@ header nav ul li a:hover {
 }
 
 .flex-item h3 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 .flex-item span {
@@ -223,7 +223,7 @@ header nav ul li a:hover {
 .contact address a {
     padding: 5px;
     font-weight: lighter;
-    font-size: 1.5vw;
+    font-size: 1.75vw;
     font-style: normal;
     color: var(--primary-color);
     text-decoration: none;
@@ -236,3 +236,68 @@ header nav ul li a:hover {
 }
 
 /* Contact Styles End */
+
+/* Media Query Styles */
+@media screen and (max-width: 980px) {
+    header {
+        padding: 10px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    header h1 {
+        width: 100%;
+        font-size: 10vw;
+    }
+
+    header nav ul {
+        justify-content: center;
+    }
+
+    .hero-banner {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .hero-banner h2 {
+        font-size: 5vw;
+    }
+
+    .page-section {
+        align-items: center;
+        justify-content: center;
+    }
+    .page-section > h2,
+    .page-section > div {
+        flex: 0 0 100%;
+        justify-content: center;
+        text-align: left;
+    }
+
+    .page-section > h2 {
+        border-right: none;
+        border-bottom: 4px solid var(--primary-color);
+        text-align: center;
+        font-size: 8vw;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+
+    .page-section div img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .flex-item:first-child {
+        min-height: 200px;
+    }
+
+    .contact address {
+        justify-content: center;
+    }
+
+    .contact address a {
+        font-size: 4vw;
+    }
+}
