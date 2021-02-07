@@ -148,6 +148,7 @@ header nav ul li a:hover {
     color: var(--quinary-color);
 }
 
+/* Flex Styles */
 .flex-container {
     display: flex;
     flex-wrap: wrap;
@@ -189,6 +190,7 @@ header nav ul li a:hover {
     font-size: 1rem;
 }
 
+/* Background Images for Work */
 .run-buddy {
     background-image: url(../images/run-buddy.jpg);
 }
